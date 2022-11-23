@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="estilo.css">
+    <title>Pokedex</title>
+    <link rel="shortcut icon" href="img/foto3.ico">
+</head>
+
+<body>
+    <!-- SECCION I N I C I O -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <img src="img/foto4.png" alt="">
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">la Pokedex virtual</p>
+                <h2>Hola <span>ENTRENADORES</span>, bienvenidos</h2>
+                <p class="descripcion">¡TE DAMOS LA BIENVENIDA AL CLUB DE ENTRENADORES POKÉMON!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION BIENVENIDA  -->
+    <section id="bienvenidas">
+        <div class="contenedor-foto">
+            <img src="img/foto.jpg" alt="">
+        </div>
+        <div class="bienvenidas">
+            <p class="titulo-seccion">pokemon</p>
+            <h2>Hola, Soy <span>Tu Pokedex</span> </h2>
+            <br> 
+            <h3>Entrenadores</h3>
+            <p>Seguro que ya has oído hablar de los Pokémon, pero ¿sabes lo que son? Los Pokémon son criaturas de todos los colores y tamaños. </p>
+            <p>Como Entrenador Pokémon, tu misión es coleccionar, entrenar y poner a luchar a tus Pokémon contra otros Pokémon que te encuentres en tus aventuras.</p>
+            <p>En muchos de los juegos Pokémon emprendes una aventura y viajas por un hermoso país explorando hasta el último rincón. El objetivo suele ser convertirse en el mejor Entrenador Pokémon del mundo.</p>
+            <p>Hay más de doce tipos diferentes de Pokémon, como los de Fuego, los de tipo Normal o los Dragón. En la siguiente pokedex podras visualizar los diferentes Pokemons.</p>
+            <p>En el siguiente cuadro coloca el nombre del Pokemon que deseas visualizar.</p>
+        </div>
+    </section>
+        <!-- IMPLEMENTACION API -->
+    <form action="" onsubmit="searchPokemon(event)">
+        <input type="text" name="pokemon" autocomplete="off">
+    </form>
+    <div data-poke-card class="poke-card">
+        <div data-poke-name>Pokedex</div>
+        <div data-poke-img-container class="img-container">
+            <img data-poke-img class="poke-img" src="img/poke-shadow.png"/>
+        </div>
+        <div data-poke-id></div>
+        <div data-poke-types class="poke-types"></div>
+        <div data-poke-stats class="poke-stats"></div>
+    </div>
+    <br> <br> 
+    <!-- SECCION FOOTER -->
+    <footer>
+        <p>Oscar Ovidio Aguirre Martinez - 2022</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
